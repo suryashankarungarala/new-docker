@@ -7,7 +7,7 @@ services:
     volumes:
       - "movievolume"
     deploy:
-      replicas: "5"
+      replicas: 5
 
   train:
     image: suryashankar598/phonepaytrainticket:v1
@@ -16,7 +16,7 @@ services:
     volumes:
       - "trainvolume"
     deploy:
-      replicas: "5"
+      replicas: 5
       
   
   flight:
@@ -26,7 +26,7 @@ services:
     volumes:
       - "flightvolume"
     deploy:
-      replicas: "3"
+      replicas: 5
  
 
   loan:
@@ -36,5 +36,5 @@ services:
     volumes:
       - "loanvolume"
     deploy:
-      replicas: "5"
+      replicas: 5
       
