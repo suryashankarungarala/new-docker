@@ -1,6 +1,6 @@
 version: "3"
 service:
-  phonepay:
+  movie:
     image: suryashankar598/phonepaymovieticket
     ports:
       - "8000:80"
