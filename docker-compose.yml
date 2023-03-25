@@ -1,5 +1,5 @@
 version: "3"
-service:
+services:
   movie:
     image: suryashankar598/phonepaymovieticket:v1
     ports:
