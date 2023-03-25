@@ -1,7 +1,7 @@
 version: "3"
 service:
   movie:
-    image: suryashankar598/phonepaymovieticket
+    image: suryashankar598/phonepaymovieticket:v1
     ports:
       - "8000:80"
     volumes:
@@ -10,7 +10,7 @@ service:
       replicas: "5"
 
   train:
-    image: suryashankar598/phonepaytrainticket
+    image: suryashankar598/phonepaytrainticket:v1
     ports:
       - "8001:80"
     volumes:
@@ -20,7 +20,7 @@ service:
       
   
   flight:
-    image: suryashankar598/phonepayflightticket
+    image: suryashankar598/phonepayflightticket:v1
     ports:
       - "8002:80"
     volumes:
@@ -30,7 +30,7 @@ service:
  
 
   loan:
-    image: suryashankar598/phonepayloanpayments
+    image: suryashankar598/phonepayloanpayments:v1
     ports:
       - "8003:80"
     volumes:
