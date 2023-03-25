@@ -1,0 +1,40 @@
+version: "3"
+service:
+  phonepay:
+    image: suryashankar598/phonepaymovieticket
+    ports:
+      - "8000:80"
+    volumes:
+      - "movievolume"
+    deploy:
+      replicas: "5"
+
+  train:
+    image: suryashankar598/phonepaytrainticket
+    ports:
+      - "8001:80"
+    volumes:
+      - "trainvolume"
+    deploy:
+      replicas: "5"
+      
+  
+  flight:
+    image: suryashankar598/phonepayflightticket
+    ports:
+      - "8002:80"
+    volumes:
+      - "flightvolume"
+    deploy:
+      replicas: "5"
+ 
+
+  loan:
+    image: suryashankar598/phonepayloanpayments
+    ports:
+      - "8003:80"
+    volumes:
+      - "loanvolume"
+    deploy:
+      replicas: "5"
+      
